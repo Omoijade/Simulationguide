@@ -274,6 +274,8 @@
     section.page, .etape { display: block !important; }
     section.page { break-before: page; }
   }
+  .telecharge-msg { flex-basis: 100%; font-size: 14px; color: var(--vert); font-weight: 600; }
+  .telecharge-msg:empty { display: none; }
   /* Mode projection : le carnet projeté en classe. Plus grand, sans menu, une étape par écran. */
   .projeter-bouton { position: fixed; top: 10px; right: 12px; z-index: 30; font: inherit; font-size: 14px; font-weight: 700; padding: 7px 12px; border-radius: 9px; border: 1px solid var(--ligne); background: #fff; color: var(--encre); cursor: pointer; }
   .projeter-bouton[aria-pressed="true"] { background: var(--encre); color: #fff; border-color: var(--encre); }
@@ -295,7 +297,7 @@
 <aside class="menu" id="menu">
   <p class="menu-titre">Carnet de la semaine</p>
   <p class="menu-groupe">Pour toute la semaine</p>
-  <a class="vers-jeu" href="../" target="_blank" rel="noopener" data-jeu>Ouvrir le jeu ↗</a>
+  <a class="vers-jeu" href="https://omoijade.github.io/vetsim/" target="_blank" rel="noopener" data-jeu>Ouvrir le jeu ↗</a>
   <a href="#accueil">Accueil</a>
   <a href="#glossaire">Glossaire</a>
   <a href="#outils">Les 4 outils</a>
@@ -2607,6 +2609,38 @@
     if (btn) btn.click();
   });
   lireHash();
+})();
+</script>
+<script>
+// ---------- Les cliniques à télécharger ----------
+// Le fichier est lu, puis enregistré sous son nom : certains navigateurs (Safari) ouvriraient sinon
+// le JSON comme du texte dans un onglet. Un message dit où il est, ou pourquoi il manque.
+(function () {
+  "use strict";
+  document.querySelectorAll("a.fichier[download]").forEach((a) => {
+    const nom = a.getAttribute("href").split("/").pop();
+    const msg = document.createElement("span");
+    msg.className = "telecharge-msg"; msg.setAttribute("role", "status");
+    a.after(msg);
+    a.addEventListener("click", async (ev) => {
+      if (location.protocol === "file:") return;          // ouvert depuis le disque : le lien simple suffit
+      ev.preventDefault();
+      msg.textContent = "Téléchargement…";
+      try {
+        const r = await fetch(a.href, { cache: "no-store" });
+        if (!r.ok) throw new Error(String(r.status));
+        const texte = await r.text();
+        JSON.parse(texte);                                  // une page d’erreur n’est pas une clinique
+        const url = URL.createObjectURL(new Blob([texte], { type: "application/octet-stream" }));
+        const lien = document.createElement("a"); lien.href = url; lien.download = nom;
+        document.body.appendChild(lien); lien.click(); lien.remove();
+        setTimeout(() => URL.revokeObjectURL(url), 4000);
+        msg.textContent = `« ${nom} » est dans votre dossier Téléchargements. Dans le jeu : Exporter, « Charger une clinique ».`;
+      } catch (e) {
+        msg.textContent = `Le fichier « ${nom} » ne répond pas (${e.message === "Unexpected end of JSON input" || /JSON/.test(e.message) ? "pas une clinique" : e.message}). Réessayez dans une minute ; s’il manque toujours, prévenez l’enseignant.`;
+      }
+    });
+  });
 })();
 </script>
 <script>
