@@ -375,6 +375,9 @@
     <dt id="g-marge-heure">Marge par heure</dt><dd>Ce qu’une heure de ce qui est plein laisse, selon le service : marge par cas ÷ heures que le cas prend à cette ressource.</dd>
     <dt id="g-amortissement">Amortissement</dt><dd>Le prix d’un appareil réparti sur les années où il sert : 26 000 € sur cinq ans, 5 200 € par an dans le résultat. L’argent, lui, sort en entier le jour de l’achat.</dd>
     <dt id="g-emprunt">Emprunt</dt><dd>De l’argent prêté par la banque. Le capital remboursé sort de la caisse sans toucher au résultat ; seuls les intérêts sont une charge.</dd>
+    <dt id="g-reference">Salaire de référence</dt><dd>Le salaire habituel pour un métier, affiché sur la fiche de chaque personne (Équipe et opérations). Payée sous 95 % de ce salaire, avec un climat sous 45, une personne quitte la clinique en fin d’année.</dd>
+    <dt id="g-investissement">Investissement</dt><dd>L’argent payé une fois, au départ d’un projet : l’appareil acheté, l’aménagement d’une salle. Radiographie : 26 000 + 5 200 = 31 200 €.</dd>
+    <dt id="g-rapporte">Argent rapporté</dt><dd>L’argent qui entre en plus dans la caisse grâce à un projet, chaque année : la trésorerie avec le projet, moins la trésorerie sans lui, sans compter l’achat.</dd>
     <dt id="g-recuperation">Délai de récupération</dt><dd>Le nombre d’années pour que l’argent rapporté par un projet rembourse l’argent investi.</dd>
     <dt id="g-retour">Retour sur investissement</dt><dd>(Argent rapporté − investissement) ÷ investissement. Il dit ce que rapporte chaque euro, pas combien d’euros.</dd>
     <dt id="g-securite">Marge de sécurité</dt><dd>De combien la demande peut baisser avant que le projet ne perde de l’argent : (cas attendus − seuil) ÷ cas attendus.</dd>
@@ -445,7 +448,7 @@
   <h2>Un seuil : la valeur où quelque chose change d’un coup</h2>
   <div class="defile"><table>
     <tr><th>Stock</th><th>Seuil</th><th>Ce qui se passe dans le jeu</th></tr>
-    <tr><td>Climat de l’équipe</td><td>sous 45</td><td>la promesse à l’équipe est manquée : −2 l’année suivante ; un salarié payé sous 95 % de sa référence part</td></tr>
+    <tr><td>Climat de l’équipe</td><td>sous 45</td><td>la promesse à l’équipe est manquée : −2 l’année suivante ; un salarié payé sous 95 % de son salaire de référence part</td></tr>
     <tr><td>Climat de l’équipe</td><td>sous 30</td><td>quelqu’un part</td></tr>
     <tr><td>Charge de l’équipe</td><td>au-dessus de 94 %</td><td>le climat perd 3 points par an</td></tr>
     <tr><td>Confiance des clients</td><td>sous 45, puis sous 35</td><td>des familles partent, puis partent vite</td></tr>
@@ -854,7 +857,7 @@
         <tr><td>Les deux ensemble</td><td>+39 069 €</td><td>+1 084</td></tr>
       </table>
       <p>Ensemble, elles valent plus que leur somme (24 000 €) : ces foyers demandent justement les soins préventifs que vous ouvrez.</p>
-      <p>Sans rien changer, le climat passe de 38 à 35 : −2 parce que l’équipe est payée sous sa référence, −1 parce qu’elle est peu occupée (40 % de ses heures). Sous 45, une personne payée sous 95 % de sa référence s’en va en fin d’année. Baisser les salaires, c’est perdre quelqu’un dès la fin de l’année 1.</p>
+      <p>Sans rien changer, le climat passe de 38 à 35 : −2 parce que l’équipe est payée sous son salaire de référence (le salaire habituel du métier, affiché sur la fiche de chaque personne dans Équipe et opérations), −1 parce qu’elle est peu occupée (40 % de ses heures). Sous un climat de 45, une personne payée sous 95 % de son salaire de référence s’en va en fin d’année. Baisser les salaires, c’est perdre quelqu’un dès la fin de l’année 1.</p>
       <p class="pourquoi">Cette année, les deux idées ensemble valent +39 069 €. Mais le climat de l’équipe baisse de 38 à 35 : sans décision pour l’équipe, il continue de baisser.</p>
     </details>
   </div>
@@ -884,7 +887,7 @@
     </ol>
     <p class="ecrire">Le stock le plus menacé, son seuil, et l’année où il le passerait.</p>
     <details class="verifier"><summary>Vérifier</summary>
-      <p>Sur la clinique de référence, après les soins préventifs et les foyers de soins courants : la trésorerie et la confiance montent ; le climat de l’équipe, à 37, est sous 45, et la promesse à l’équipe est manquée chaque année. Sans décision pour l’équipe, il descend vers 30.</p>
+      <p>Sur la clinique de référence, après les soins préventifs et les foyers de soins courants : la trésorerie et la confiance montent ; le climat de l’équipe, à 37, est sous 45 : la promesse à l’équipe (un climat d’au moins 45) est manquée, et le climat perd 2 points de plus chaque année. Sans décision pour l’équipe, il descend vers 30.</p>
     </details>
   </div>
 
@@ -899,7 +902,7 @@
     </ol>
     <details><summary>Un indice</summary><p>Équipe et opérations : le climat de l’équipe, et ses causes en points.</p></details>
     <details class="verifier"><summary>Vérifier</summary>
-      <p>La clinique de référence a choisi une réunion d’équipe et une hausse de 5 % du salaire de Maya, qui la remet au-dessus de 95 % de sa référence. Année 2 : +9 763 € de résultat, 48 373 € en caisse, climat 39,9. Personne ne part.</p>
+      <p>La clinique de référence a choisi une réunion d’équipe et une hausse de 5 % du salaire de Maya, qui la remet au-dessus de 95 % de son salaire de référence. Année 2 : +9 763 € de résultat, 48 373 € en caisse, climat 39,9. Personne ne part.</p>
       <p class="pourquoi">Avec la réunion seule, l’année 2 rapporte 829 € de plus : la hausse de Maya coûte 829 € cette année. Deux ans plus tard, la caisse est la même dans les deux cas (76 222 € contre 76 192 €), et le climat est à 40,7 au lieu de 35 : cinq points plus loin du seuil de 30, où quelqu’un part.</p>
     </details>
   </div>
@@ -953,13 +956,15 @@
   <div class="etape" data-titre="Que rapporte une heure de ce qui est plein ?" data-outil="o4">
     <h2><span class="tag o4">Que rapporte une heure ?</span> Quand une ressource est pleine, comparez les services par heure de cette ressource</h2>
     <p class="calcul">marge par heure = marge par cas ÷ heures que le cas prend à ce qui est plein</p>
-    <p class="exemple"><strong>Exemple.</strong> La salle est pleine. Une chirurgie laisse 228,52 € et occupe la salle 2,6 heures : 88 € par heure de salle. Une analyse laisse 46,83 € pour 0,39 heure : 120 € par heure. Par cas, la chirurgie gagne ; par heure de salle, l’analyse.</p>
+    <p class="exemple"><strong>Exemple.</strong> La salle est pleine. Une chirurgie laisse 228,52 € et occupe la salle 2,6 heures : 228,52 ÷ 2,6 = 88 € par heure de salle. Une analyse laisse 46,83 € et occupe la salle 0,39 heure : 46,83 ÷ 0,39 = 120 € par heure. Par cas, la chirurgie gagne ; par heure de salle, l’analyse.</p>
     <details><summary>Ce que cela ne dit pas</summary>
       <p>Le classement par heure ne vaut que pour la ressource pleine. Si rien n’est plein, c’est la marge par cas qui compte.</p>
     </details>
     <details><summary>Le prix d’un service qui refuse déjà des demandes</summary>
       <p>Monter un prix fait perdre des demandes. Si le service refusait déjà plus de demandes qu’il n’en perd, il traite autant de cas qu’avant, et chacun laisse plus.</p>
-      <p>Exemple : le prix d’une consultation monte de 10 €, et 200 demandes partent. Si la clinique refusait 300 demandes, elle ne perd aucun cas, et chacun laisse 10 € de plus. Si elle avait de la place, elle perd 200 cas : 200 × 36 = 7 200 € de marge en moins.</p>
+      <p>Exemple : le prix d’une consultation monte de 10 €, et 200 demandes partent.</p>
+      <p>Si la clinique refusait déjà 300 demandes faute de place, les 200 demandes perdues ne font que réduire les refus, de 300 à 100. Elle traite autant de cas qu’avant, et chacun laisse 10 € de plus.</p>
+      <p>Si elle avait de la place, elle perd 200 cas. Chacun laissait 36 € : 200 × 36 = 7 200 € de marge en moins, contre 10 € de plus sur chaque cas qui reste.</p>
       <p>La confiance, elle, baisse un peu chaque année si le prix dépasse le prix accepté.</p>
     </details>
     <details><summary>L’erreur fréquente</summary>
@@ -970,8 +975,8 @@
 
   <div class="etape" data-titre="Ce que vaut une étude de marché">
     <h2>Une étude de marché vaut au plus ce qu’elle vous évite de perdre</h2>
-    <p>Sans étude, le jeu montre le prix accepté dans une fourchette large ; le vrai prix n’est pas forcément au milieu.</p>
-    <p class="exemple"><strong>Exemple.</strong> La fourchette dit « de 60 à 95 € ». À 95 €, si le vrai prix est 65 €, la clinique est 46 % au-dessus : sa confiance baisse chaque année. À 60 €, si le vrai prix est 90 €, elle perd 30 € par cas. Une étude qui coûte moins que ces erreurs vaut la peine.</p>
+    <p>Sans étude, le jeu montre le prix accepté dans une fourchette ; le vrai prix n’est pas forcément au milieu.</p>
+    <p class="exemple"><strong>Exemple.</strong> La fourchette dit « de 60 à 95 € ». À 95 €, si le vrai prix accepté est 65 €, la clinique est 30 € trop chère : ses clients demandent moins, et leur confiance baisse. À 60 €, si le vrai prix est 90 €, elle encaisse 30 € de moins que possible sur chaque cas. L’étude vaut au plus ce que ces erreurs coûtent.</p>
     <details><summary>Ce que coûte une étude, dans le jeu</summary>
       <p>L’étude ne change pas ce que les clients acceptent : elle change ce que vous savez. Par l’équipe : 60 heures de Maya, et la fourchette se resserre. Par un cabinet : 8 000 € chaque année où l’étude reste choisie, et le prix exact. Revenir à « Aucune étude » fait revenir la fourchette large.</p>
     </details>
@@ -991,10 +996,11 @@
     <p class="exemple"><strong>Exemple.</strong> Une radiographie à 26 000 € : la caisse perd 26 000 € l’année de l’achat. Le résultat compte 26 000 ÷ 5 = 5 200 € par an, pendant cinq ans.</p>
     <details><summary>La formule de la trésorerie</summary>
       <p class="calcul">trésorerie qui change = résultat + amortissements − achats + emprunt reçu − capital remboursé</p>
-      <p>Exemple : résultat +10 000 €, achat d’un appareil à 25 000 €, amorti 5 000 € par an, sans emprunt. Trésorerie : 10 000 + 5 000 − 25 000 = −10 000 €. La clinique est bénéficiaire, et sa caisse baisse.</p>
+      <p>Pourquoi ajouter les amortissements ? Ils sont retirés du résultat, mais aucun argent ne sort de la caisse pour eux : l’appareil a été payé le jour de l’achat. On les rajoute donc pour retrouver l’argent réel.</p>
+      <p>Exemple : une clinique achète un appareil à 25 000 €, amorti sur cinq ans : 5 000 € par an. Son résultat de l’année, après ces 5 000 €, est de +10 000 €. Sans emprunt, sa trésorerie change de 10 000 + 5 000 − 25 000 = −10 000 €. Elle est bénéficiaire, et sa caisse baisse de 10 000 €.</p>
     </details>
     <details><summary>L’emprunt, en chiffres</summary>
-      <p>30 000 € empruntés à 6 %, sur cinq ans. La première année : 1 800 € d’intérêts dans le résultat ; 6 000 € de capital remboursés, qui sortent de la caisse sans toucher au résultat.</p>
+      <p>30 000 € empruntés à 6 %, remboursés sur cinq ans. La première année : 30 000 × 6 % = 1 800 € d’intérêts, comptés dans le résultat ; et 30 000 ÷ 5 = 6 000 € de capital remboursés, qui sortent de la caisse sans toucher au résultat.</p>
       <p>La banque prête à 6 % si la promesse à la banque a été tenue l’année d’avant, à 9 % après une promesse manquée, et refuse après deux années manquées de suite.</p>
     </details>
     <p class="source">OpenStax, <em>Principles of Accounting</em> (amortissement, emprunts) ; règles du jeu (comptes, taux de la banque).</p>
@@ -1084,7 +1090,7 @@
     <p class="ecrire">Pour chaque service : combien de demandes sont refusées, et pourquoi. Puis : demandes refusées × marge par cas.</p>
     <details class="verifier"><summary>Vérifier</summary>
       <p>Soins préventifs : 1 302 demandes, 936 traitées. « Heures de soutien 306 · Ruptures de stock 60 ». Vaccination : « Ruptures de stock 99 ». Consultation : aucune demande refusée.</p>
-      <p>Au plus : 366 × 42,95 + 99 × 32,33 = 18 921 € par an, si tous les refus étaient soignés.</p>
+      <p>Soins préventifs refusés : 306 + 60 = 366 ; marge 42,95 €. Vaccinations refusées : 99 ; marge 32,33 €. Au plus : 366 × 42,95 + 99 × 32,33 = 18 921 € par an, si tous les refus étaient soignés.</p>
       <p class="pourquoi">Maya ne donne que 35 % de son temps aux soins préventifs ; le reste va à la vaccination. Et la gestion des stocks « Basique » ne suit plus une demande qui a grandi.</p>
     </details>
   </div>
@@ -1229,7 +1235,7 @@
         <tr><td>Réunion d’équipe</td><td>+4, moitié moins si elle est répétée</td></tr>
         <tr><td>Semaine prolongée</td><td>−1</td></tr>
       </table>
-      <p>Sous 45, une personne payée sous 95 % de sa référence part aussi. Équipe et opérations : le climat, et ses causes en points.</p>
+      <p>Sous 45, une personne payée sous 95 % de son salaire de référence part aussi. Équipe et opérations : le climat, et ses causes en points.</p>
     </details>
     <details><summary>Ce que coûte un départ</summary>
       <p>La personne emporte ses heures, et tout ce qu’elles rapportaient. Ceux qui restent perdent 6 points de climat. Une nouvelle personne ne donne d’abord que les trois quarts de ses heures.</p>
@@ -1270,7 +1276,7 @@
   <div class="etape" data-titre="Avec ou sans ? Sur plusieurs années" data-outil="o3">
     <h2><span class="tag o3">Avec ou sans ?</span> Sur plusieurs années, additionnez les différences année par année ; l’horizon change la réponse</h2>
     <p class="calcul">ce que vaut la décision = différence de l’année 1 + différence de l’année 2 + …</p>
-    <p class="exemple"><strong>Exemple.</strong> Différences : +12 000 €, +14 000 €, −50 000 €, −57 000 €. Sur deux ans : +26 000 €. Sur quatre ans : −81 000 €.</p>
+    <p class="exemple"><strong>Exemple.</strong> Différences avec et sans la décision : +12 000 €, +14 000 €, −50 000 €, −57 000 €. Sur deux ans : 12 000 + 14 000 = +26 000 €. Sur quatre ans : 26 000 − 50 000 − 57 000 = −81 000 €.</p>
     <details><summary>Choisir l’horizon</summary>
       <p>Assez long pour que les stocks lents aient le temps de passer leur seuil : si le climat perd 3 points par an et qu’il est à 38, il faut au moins trois ans pour voir le départ. Rien ne garantit que l’année d’après l’horizon ressemble aux précédentes.</p>
     </details>
@@ -1420,7 +1426,7 @@
         <tr><td>Heures supplémentaires seules</td><td>−783 €</td><td>−120</td><td>40,6</td></tr>
         <tr><td>Les deux ensemble</td><td>+12 535 €</td><td>+643</td><td>35,3</td></tr>
       </table>
-      <p class="pourquoi">La soirée donne de la place, les heures donnent des personnes : seules, elles ne servent à rien ; ensemble, elles rapportent 12 535 €. Mais l’équipe passe à 99 % de charge : le climat perd 3 points au lieu d’en gagner 1, plus 1 pour la soirée.</p>
+      <p class="pourquoi">La soirée donne de la place, les heures donnent des personnes : seules, elles ne servent à rien ; ensemble, elles rapportent 12 535 €. Mais l’équipe passe à 99 % de charge. Au-dessus de 94 %, le climat perd 3 points au lieu d’en gagner 1, et la soirée lui en retire 1 de plus : il finit l’année à 35,3 au lieu de 40,6.</p>
     </details>
   </div>
 
@@ -1429,7 +1435,7 @@
     <ol>
       <li>« Cases du jour » › Mercredi. Reliez Heures d’ouverture et Heures supplémentaires à Charge de l’équipe (S) ; Charge à Climat (O, au-dessus de 94 %) ; Climat à Départ d’un membre de l’équipe (O, ⏱).</li>
       <li>Faire tourner : Heures supplémentaires +3, puis « Année suivante ».</li>
-      <li>Projeter, Climat de l’équipe : la proposition retire environ 5 points par an. Entrez −5.</li>
+      <li>Projeter, Climat de l’équipe : la proposition retire environ 5 points par an (40,6 sans elle, 35,3 avec). Entrez −5.</li>
     </ol>
     <p class="ecrire">L’année où, selon votre carte, quelqu’un partirait.</p>
   </div>
@@ -1528,7 +1534,7 @@
   <div class="etape" data-titre="Avec ou sans ? Sur trois ans" data-outil="o3">
     <h2><span class="tag o3">Avec ou sans ?</span> Un projet se juge sur trois ans, en résultat et en trésorerie</h2>
     <p>On joue les trois années avec le projet, puis les mêmes années sans lui, et on additionne les différences : pour le résultat, et pour la trésorerie.</p>
-    <p class="exemple"><strong>Exemple.</strong> Différences de résultat : −8 000 €, +5 000 €, +7 000 €, soit +4 000 €. Sur la première année seule, le projet aurait été rejeté.</p>
+    <p class="exemple"><strong>Exemple.</strong> Différences de résultat avec et sans le projet : −8 000 € la première année, +5 000 € la deuxième, +7 000 € la troisième. Sur trois ans : −8 000 + 5 000 + 7 000 = +4 000 €. Sur la première année seule, le projet aurait été rejeté.</p>
     <details><summary>Pourquoi la trésorerie aussi</summary>
       <p>Un achat sort de la caisse en entier la première année ; le résultat ne compte que son amortissement (mardi, notion 4). Un projet peut améliorer le résultat et vider la caisse la même année.</p>
       <p class="calcul">trésorerie qui change = résultat + amortissements − achats + emprunt reçu − capital remboursé</p>
@@ -1545,16 +1551,45 @@
   <div class="etape" data-titre="Le délai et le retour">
     <h2>Le délai dit quand l’argent revient ; le retour dit ce que rapporte chaque euro ; aucun ne dit combien d’euros</h2>
     <p class="calcul">délai = investissement ÷ argent rapporté chaque année<br>retour = (argent rapporté − investissement) ÷ investissement</p>
-    <p class="exemple"><strong>Exemple.</strong> Un appareil coûte 20 000 € et rapporte 8 000 € d’argent par an. Délai : 20 000 ÷ 8 000 = 2,5 ans. Sur trois ans, il rapporte 24 000 € : retour (24 000 − 20 000) ÷ 20 000 = 20 %.</p>
-    <details><summary>Si l’argent rapporté change chaque année</summary>
-      <p>On additionne année par année jusqu’à dépasser l’investissement. Exemple : 20 000 € investis, puis 6 000 €, 10 000 €, 12 000 €. Après deux ans, il reste 4 000 € ; la troisième année en rapporte 12 000 : délai 2 + 4 000 ÷ 12 000 ≈ 2,3 ans.</p>
+    <p class="exemple"><strong>Exemple.</strong> Un appareil coûte 20 000 €. Grâce à lui, 8 000 € de plus entrent dans la caisse chaque année. Délai : 20 000 ÷ 8 000 = 2,5 ans. En trois ans, il rapporte 24 000 € ; retour : (24 000 − 20 000) ÷ 20 000 = 20 %.</p>
+    <details><summary>Ce que veulent dire « investissement » et « argent rapporté »</summary>
+      <p><strong>L’investissement</strong> est l’argent payé une fois, au départ : l’appareil acheté, l’aménagement de la salle.</p>
+      <p><strong>L’argent rapporté</strong> est l’argent qui entre en plus dans la caisse grâce au projet, chaque année : la trésorerie avec le projet, moins la trésorerie sans lui. L’achat n’y est pas compté : il est déjà dans l’investissement.</p>
     </details>
-    <details><summary>Les limites, en deux exemples</summary>
-      <p>Délai. Projet A : 10 000 €, rapporte 5 000 € par an pendant deux ans. Projet B : 10 000 €, rapporte 4 000 € par an pendant six ans. A revient en 2 ans, B en 2,5 ans. Mais A ne laisse rien de plus que sa mise ; B laisse 14 000 €.</p>
-      <p>Retour. Projet C : 5 000 € investis, 15 000 € rapportés : 200 %. Projet D : 30 000 € investis, 54 000 € rapportés : 80 %. Mais D laisse 24 000 €, et C 10 000 €.</p>
+    <details><summary>Si l’argent rapporté change chaque année</summary>
+      <p>On suit, année par année, ce qui reste à rembourser. Exemple : 20 000 € investis.</p>
+      <table>
+        <tr><th>Année</th><th>Argent rapporté</th><th>Total depuis le départ</th><th>Reste à rembourser</th></tr>
+        <tr><td>1</td><td>6 000 €</td><td>6 000 €</td><td>20 000 − 6 000 = 14 000 €</td></tr>
+        <tr><td>2</td><td>10 000 €</td><td>16 000 €</td><td>20 000 − 16 000 = 4 000 €</td></tr>
+        <tr><td>3</td><td>12 000 €</td><td>28 000 €</td><td>remboursé pendant l’année</td></tr>
+      </table>
+      <p>Au début de l’année 3, il manque 4 000 €. L’année 3 rapporte 12 000 €, soit 1 000 € par mois : il faut 4 mois pour rapporter les 4 000 € qui manquent.</p>
+      <p>Délai : 2 ans et 4 mois. En années : 2 + 4 000 ÷ 12 000 = 2,33 ans.</p>
+    </details>
+    <details><summary>Pourquoi le délai le plus court n’est pas forcément le meilleur</summary>
+      <p>Deux projets coûtent chacun 10 000 €.</p>
+      <table>
+        <tr><th></th><th>Projet A</th><th>Projet B</th></tr>
+        <tr><td>Argent rapporté</td><td>5 000 € par an, pendant 2 ans</td><td>4 000 € par an, pendant 6 ans</td></tr>
+        <tr><td>Total rapporté</td><td>10 000 €</td><td>24 000 €</td></tr>
+        <tr><td>Délai</td><td>10 000 ÷ 5 000 = 2 ans</td><td>10 000 ÷ 4 000 = 2,5 ans</td></tr>
+        <tr><td>Gagné, une fois les 10 000 € revenus</td><td>0 €</td><td>24 000 − 10 000 = 14 000 €</td></tr>
+      </table>
+      <p>A rend l’argent plus vite, mais ne fait que rendre les 10 000 € investis. B met six mois de plus, et fait gagner 14 000 €.</p>
+    </details>
+    <details><summary>Pourquoi le retour le plus haut n’est pas forcément le meilleur</summary>
+      <table>
+        <tr><th></th><th>Projet C</th><th>Projet D</th></tr>
+        <tr><td>Investi</td><td>5 000 €</td><td>30 000 €</td></tr>
+        <tr><td>Rapporté</td><td>15 000 €</td><td>54 000 €</td></tr>
+        <tr><td>Gagné en plus de l’investissement</td><td>15 000 − 5 000 = 10 000 €</td><td>54 000 − 30 000 = 24 000 €</td></tr>
+        <tr><td>Retour</td><td>10 000 ÷ 5 000 = 200 %</td><td>24 000 ÷ 30 000 = 80 %</td></tr>
+      </table>
+      <p>C rapporte plus pour chaque euro investi. D fait gagner 14 000 € de plus. Si la clinique a de quoi payer D, D l’enrichit davantage.</p>
     </details>
     <details><summary>L’erreur fréquente</summary>
-      <p>Choisir le délai le plus court, ou le pourcentage le plus haut, sans regarder les euros.</p>
+      <p>Choisir le projet qui rend l’argent le plus vite, ou celui qui a le pourcentage le plus haut, sans regarder combien d’euros il fait gagner à la fin.</p>
     </details>
     <p class="source">OpenStax, chapitre 11.2 : le délai de récupération, le taux de rendement comptable, et leurs limites.</p>
   </div>
@@ -1562,11 +1597,12 @@
   <div class="etape" data-titre="La marge de sécurité" data-outil="o2">
     <h2><span class="tag o2">Combien de cas ?</span> La marge de sécurité dit de combien les clients peuvent manquer avant que le projet perde</h2>
     <p class="calcul">seuil du projet = coûts fixes que le projet ajoute ÷ marge par cas<br>marge de sécurité = (cas attendus − seuil) ÷ cas attendus</p>
-    <p class="exemple"><strong>Exemple.</strong> Un projet ajoute 15 000 € de coûts fixes par an, et chaque cas laisse 60 € : seuil de 250 cas. Vous en attendez 400 : (400 − 250) ÷ 400 = 37,5 %. La demande peut baisser d’un bon tiers.</p>
+    <p class="exemple"><strong>Exemple.</strong> Un projet ajoute 15 000 € de coûts fixes par an, et chaque cas laisse 60 € : seuil de 250 cas. Vous en attendez 400 : (400 − 250) ÷ 400 = 37,5 %. Il peut manquer 150 cas sur 400 avant que le projet perde de l’argent.</p>
     <details><summary>Si 8 clients sur 10 viennent</summary>
       <p>Les cas qui manquent emportent leur marge ; les coûts du projet restent entiers.</p>
       <p class="calcul">ce qui reste = ce que le projet laisse − cas qui manquent × marge par cas</p>
-      <p>Exemple : un projet laisse 10 000 €, avec 500 cas à 40 €. À 8 clients sur 10, 100 cas manquent : 10 000 − 100 × 40 = 6 000 €. Il reste 6 000 €, et non 8 000 €.</p>
+      <p>Exemple : un projet ajoute 10 000 € au résultat. Il fait 500 cas, et chaque cas laisse 40 €. À 8 clients sur 10, 100 cas manquent (20 % de 500) : ils emportent 100 × 40 = 4 000 €. Il reste 10 000 − 4 000 = 6 000 €.</p>
+      <p>On pourrait croire qu’il reste 80 % de 10 000 €, soit 8 000 €. Mais l’appareil et la salle coûtent autant avec moins de clients : seule la marge des cas manquants disparaît.</p>
     </details>
     <details><summary>L’erreur fréquente</summary>
       <p>Réduire le gain de 20 % quand 20 % des clients manquent. Ou juger le seuil sur la première année, quand les clients arrivent encore.</p>
@@ -1582,13 +1618,13 @@
       <tr><td>Dans la trésorerie, la première année</td><td>tout le prix d’achat</td><td>le premier loyer</td></tr>
       <tr><td>Si des clients manquent</td><td>coûts fixes plus bas : le projet tient mieux</td><td>le loyer reste : le projet tient moins bien</td></tr>
     </table>
-    <p class="exemple"><strong>Exemple.</strong> Un appareil coûte 11 000 € à l’achat, ou 9 000 € par an en location. Sur trois ans : 11 000 € plus l’entretien, contre 27 000 €. Mais une clinique qui n’a que 8 000 € en caisse ne peut pas acheter sans emprunter.</p>
+    <p class="exemple"><strong>Exemple.</strong> Un appareil coûte 11 000 € à l’achat, ou 9 000 € par an en location. Sur trois ans, l’achat coûte 11 000 € plus l’entretien ; la location, 3 × 9 000 = 27 000 €. Mais une clinique qui n’a que 8 000 € en caisse ne peut pas payer 11 000 € d’un coup sans emprunter.</p>
     <p class="source">OpenStax, chapitre 11 (décisions d’investissement) ; règles du jeu (achat, location, amortissement).</p>
   </div>
 
   <div class="etape plus-loin" data-titre="Pour aller plus loin : un euro plus tard">
     <h2>Pour aller plus loin : un euro reçu dans trois ans vaut moins qu’un euro aujourd’hui</h2>
-    <p class="exemple"><strong>Exemple.</strong> 1 000 € placés aujourd’hui à 6 % deviennent 1 191 € dans trois ans. Recevoir 1 000 € dans trois ans vaut donc moins que les recevoir aujourd’hui.</p>
+    <p class="exemple"><strong>Exemple.</strong> 1 000 € placés aujourd’hui à 6 % par an deviennent 1 060 € après un an, 1 124 € après deux, 1 191 € après trois. Recevoir 1 000 € dans trois ans, c’est donc moins bien que les recevoir aujourd’hui : on perd les 191 € que l’argent aurait rapporté.</p>
     <details><summary>Le mot</summary>
       <p>La <strong>valeur actuelle nette</strong> ramène chaque euro futur à sa valeur d’aujourd’hui, puis additionne. Le délai et le retour l’ignorent : ils comptent un euro de l’année 9 comme un euro de l’année 7. On ne la calcule pas cette semaine.</p>
     </details>
@@ -1668,7 +1704,7 @@
         <tr><td>Laboratoire loué</td><td>+52</td><td>+10 070</td><td>+10 589</td><td>+20 711</td><td>−4 088</td><td>+17 491</td></tr>
       </table></div>
       <p>La clinique de référence commence l’année 7 avec 178 437 € en caisse. Elle traite 432 radiographies ou 608 analyses en année 8.</p>
-      <p class="pourquoi">Acheter fait mieux que louer sur trois ans, en résultat et en trésorerie ; mais l’année 7, l’achat fait baisser la caisse de 18 374 € quand le résultat monte de 7 106 €. La radiographie laisse presque deux fois plus par cas que le laboratoire.</p>
+      <p class="pourquoi">Acheter fait mieux que louer sur trois ans, en résultat et en trésorerie. Mais en année 7, le résultat est 7 106 € plus haut qu’avec « rien », et la caisse 18 374 € plus basse : l’appareil et la salle (31 200 €) sont payés d’un coup, alors que le résultat ne compte qu’une année d’amortissement. La radiographie laisse presque deux fois plus par cas que le laboratoire.</p>
     </details>
     <details><summary>Et engager quelqu’un ?</summary>
       <p>Sur la même clinique, trois ans comparés à ne rien faire : l’échographie avec la Dre Neri, −53 873 € en année 7 et −141 976 € sur trois ans ; un vétérinaire généraliste, −37 561 € et −116 727 €. La demande pour ces heures n’existe pas encore : demandes refusées × marge par cas.</p>
@@ -1677,9 +1713,20 @@
 
   <div class="etape" data-titre="Délai et retour" data-heure="10 h 15 · 10 min" data-outil="o3">
     <h2>Calculez le délai et le retour de chaque projet</h2>
-    <p>L’investissement : l’appareil acheté et l’aménagement de la salle. L’argent rapporté chaque année : la différence de trésorerie ; pour l’année 7, ajoutez-lui l’investissement, qu’elle contient.</p>
-    <p class="calcul">délai = années entières + ce qui reste ÷ argent rapporté l’année suivante<br>retour sur trois ans = (argent rapporté − investissement) ÷ investissement</p>
-    <p class="ecrire">Pour chaque projet : l’investissement, l’argent rapporté chaque année, le délai, le retour.</p>
+    <p><strong>Investissement</strong> : l’appareil acheté et l’aménagement de la salle, payés en année 7.</p>
+    <p><strong>Argent rapporté dans l’année</strong> : de combien l’écart de trésorerie avec « rien » a grandi pendant l’année. En année 7, ajoutez l’investissement : l’écart le contient déjà.</p>
+    <p class="ecrire">Pour chaque projet : l’investissement, l’argent rapporté en années 7, 8 et 9, le délai, le retour.</p>
+    <details><summary>Le calcul pas à pas : la radiographie achetée</summary>
+      <p>Investissement : 26 000 € d’appareil + 5 200 € de salle = 31 200 €.</p>
+      <table>
+        <tr><th>Année</th><th>Écart de trésorerie avec « rien », en fin d’année</th><th>Argent rapporté dans l’année</th></tr>
+        <tr><td>7</td><td>−18 374 €</td><td>−18 374 + 31 200 = 12 826 €</td></tr>
+        <tr><td>8</td><td>+6 587 €</td><td>6 587 − (−18 374) = 24 961 €</td></tr>
+        <tr><td>9</td><td>+32 175 €</td><td>32 175 − 6 587 = 25 588 €</td></tr>
+      </table>
+      <p><strong>Délai.</strong> Après l’année 7, il reste 31 200 − 12 826 = 18 374 € à rembourser. L’année 8 rapporte 24 961 €, plus que ce qui reste : le projet est remboursé pendant l’année 8, après 18 374 ÷ 24 961 = 0,74 de l’année, environ 9 mois. Délai : 1 + 0,74 ≈ 1,7 an.</p>
+      <p><strong>Retour sur trois ans.</strong> Rapporté : 12 826 + 24 961 + 25 588 = 63 375 €. Gagné en plus de l’investissement : 63 375 − 31 200 = 32 175 €. Retour : 32 175 ÷ 31 200 ≈ 103 %.</p>
+    </details>
     <details class="verifier"><summary>Vérifier</summary>
       <div class="defile"><table>
         <tr><th>Projet</th><th>Investissement</th><th>Rapporté : 7, 8, 9</th><th>Délai</th><th>Retour sur trois ans</th></tr>
@@ -1688,7 +1735,6 @@
         <tr><td>Laboratoire acheté</td><td>15 600 €</td><td>7 317, 17 335, 17 854</td><td>1,5 an</td><td>(42 506 − 15 600) ÷ 15 600 ≈ 172 %</td></tr>
         <tr><td>Laboratoire loué</td><td>4 600 €</td><td>512, 10 530, 11 049</td><td>1,4 an</td><td>(22 091 − 4 600) ÷ 4 600 ≈ 380 %</td></tr>
       </table></div>
-      <p>Radiographie achetée : après l’année 7, il reste 31 200 − 12 826 = 18 374 € ; l’année 8 rapporte 24 961 € : 1 + 18 374 ÷ 24 961 ≈ 1,7 an.</p>
       <p class="pourquoi">La radiographie louée a le meilleur retour : 484 %. L’achetée laisse le plus d’euros : 32 175 € contre 25 160 €. Le pourcentage trompe quand les investissements n’ont pas la même taille. Les délais sont courts parce que la demande attendait déjà.</p>
     </details>
   </div>
@@ -1720,12 +1766,13 @@
     <p class="ecrire">Ce qui reste à 8 sur 10, puis à 6 sur 10, pour l’achat et pour la location.</p>
     <details class="verifier"><summary>Vérifier</summary>
       <table>
-        <tr><th>Projet</th><th>Laisse avant impôt, année 8</th><th>À 8 sur 10</th><th>À 6 sur 10</th></tr>
+        <tr><th>Projet</th><th>Ce que le projet ajoute au résultat avant impôt, année 8</th><th>À 8 sur 10</th><th>À 6 sur 10</th></tr>
         <tr><td>Radiographie achetée</td><td>25 655 €</td><td>25 655 − 86 × 89,22 = 17 982 €</td><td>25 655 − 173 × 89,22 = 10 220 €</td></tr>
         <tr><td>Radiographie louée</td><td>17 915 €</td><td>10 242 €</td><td>2 480 €</td></tr>
         <tr><td>Laboratoire acheté</td><td>19 567 €</td><td>19 567 − 122 × 46,83 = 13 854 €</td><td>19 567 − 243 × 46,83 = 8 187 €</td></tr>
         <tr><td>Laboratoire loué</td><td>13 427 €</td><td>7 714 €</td><td>2 047 €</td></tr>
       </table>
+      <p>Les cas qui manquent : à 8 sur 10, 20 % des cas de l’année 8 ; à 6 sur 10, 40 %. Radiographie : 20 % de 432 = 86 cas, 40 % = 173 cas. Laboratoire : 20 % de 608 = 122 cas, 40 % = 243 cas.</p>
       <p class="pourquoi">À 6 clients sur 10, les projets achetés laissent encore 8 000 à 10 000 € ; les projets loués, à peine 2 000 €. Le loyer reste quand les clients manquent.</p>
     </details>
   </div>
@@ -1800,7 +1847,7 @@
     { cle: "tresorerie", nom: "Trésorerie", sorte: "stock", ligne: /^Trésorerie finale/, unite: "€", dec: 0, seuils: [{ v: 0, sens: -1, txt: "la caisse est vide" }] },
     { cle: "foyers", nom: "Foyers clients", sorte: "stock", ligne: /^Foyers clients/, unite: "", dec: 0, seuils: [] },
     { cle: "confiance", nom: "Confiance des clients", sorte: "stock", ligne: /^Confiance des clients/, unite: "sur 100", dec: 1, seuils: [{ v: 65, sens: 1, txt: "le bouche-à-oreille amène des familles", bon: true }, { v: 45, sens: -1, txt: "des familles partent" }, { v: 35, sens: -1, txt: "les familles partent vite" }] },
-    { cle: "climat", nom: "Climat de l’équipe", sorte: "stock", ligne: /^Climat de l’équipe/, unite: "sur 100", dec: 1, seuils: [{ v: 45, sens: -1, txt: "promesse à l’équipe manquée ; un salarié payé sous 95 % de sa référence part" }, { v: 30, sens: -1, txt: "quelqu’un part" }] },
+    { cle: "climat", nom: "Climat de l’équipe", sorte: "stock", ligne: /^Climat de l’équipe/, unite: "sur 100", dec: 1, seuils: [{ v: 45, sens: -1, txt: "promesse à l’équipe manquée ; un salarié payé sous 95 % de son salaire de référence part" }, { v: 30, sens: -1, txt: "quelqu’un part" }] },
     { cle: "charge", nom: "Charge de l’équipe", sorte: "stock", ligne: /^Charge de l’équipe/, unite: "%", dec: 1, seuils: [{ v: 94, sens: 1, txt: "le climat perd 3 points par an" }, { v: 45, sens: -1, txt: "équipe sous-occupée : le climat perd 1 point par an" }] },
     { cle: "resultat", nom: "Résultat net", sorte: "flux", ligne: /^Résultat net/, unite: "€", dec: 0, seuils: [] },
     { cle: "cas", nom: "Cas traités", sorte: "flux", ligne: /^Cas traités/, unite: "", dec: 0, seuils: [] }
