@@ -1,0 +1,21 @@
+CARNET EN LIGNE — ce qui va sur GitHub
+=====================================
+
+Dans le dépôt du jeu (https://omoijade.github.io/vetsimulation/), créez un dossier « carnet »
+et téléversez-y tout le contenu de ce dossier-ci. Remplacez les fichiers du même nom.
+
+  index.html               le carnet des étudiants (la page qui s'ouvre)
+  clinique-semaine.json    la clinique de départ, à charger lundi dans le jeu
+  clinique-mardi.json      la clinique commune de mardi (analyse guidée)
+  clinique-mercredi.json   la clinique commune de mercredi
+  clinique-vendredi.json   la clinique commune de vendredi
+
+Lien à donner aux étudiants :
+  le carnet      https://omoijade.github.io/vetsimulation/carnet/
+Le carnet contient les boutons de téléchargement des cliniques et les codes de séance, à l'étape
+où les étudiants en ont besoin. Son bouton « Ouvrir le jeu » mène au jeu, un dossier plus haut.
+
+À NE JAMAIS AJOUTER : les notes de l'animateur, la semaine de l'enseignant, le briefing,
+la carte du modèle, le cadre de recherche, le dossier « outils ». Ils sont pour vous seul.
+
+Ce dossier est refait à chaque « node outils/verifier-tout.js » : ne le modifiez pas à la main.
